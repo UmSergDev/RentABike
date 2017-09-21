@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		504ED63F1DFDA39F00AE6444 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED63E1DFDA39F00AE6444 /* AppDelegate.swift */; };
+		504ED6441DFDA39F00AE6444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504ED6421DFDA39F00AE6444 /* Main.storyboard */; };
+		504ED6461DFDA39F00AE6444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504ED6451DFDA39F00AE6444 /* Assets.xcassets */; };
+		504ED6491DFDA39F00AE6444 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504ED6471DFDA39F00AE6444 /* LaunchScreen.storyboard */; };
+		504ED6541DFDA3A000AE6444 /* JitenshaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED6531DFDA3A000AE6444 /* JitenshaTests.swift */; };
+		504ED65F1DFDA3A000AE6444 /* JitenshaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED65E1DFDA3A000AE6444 /* JitenshaUITests.swift */; };
+		504ED6761DFDA69D00AE6444 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED6751DFDA69D00AE6444 /* Utils.swift */; };
+		504ED6791DFDA75200AE6444 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED6781DFDA75200AE6444 /* ErrorManager.swift */; };
+		504ED67A1DFDA76500AE6444 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED6781DFDA75200AE6444 /* ErrorManager.swift */; };
+		504ED67C1DFDA7B200AE6444 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED67B1DFDA7B200AE6444 /* APIManager.swift */; };
+		504ED67E1DFDA7EE00AE6444 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED67D1DFDA7EE00AE6444 /* BaseRouter.swift */; };
+		504ED67F1DFDA7EE00AE6444 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED67D1DFDA7EE00AE6444 /* BaseRouter.swift */; };
+		504ED6811DFDA82E00AE6444 /* SessionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED6801DFDA82E00AE6444 /* SessionRouter.swift */; };
+		504ED6831DFDA85F00AE6444 /* PlaceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED6821DFDA85F00AE6444 /* PlaceRouter.swift */; };
+		504ED6851DFDA89100AE6444 /* PaymentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED6841DFDA89100AE6444 /* PaymentRouter.swift */; };
+		504ED6871DFDA8DD00AE6444 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED6861DFDA8DD00AE6444 /* Session.swift */; };
+		504ED6891DFDA8FD00AE6444 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED6881DFDA8FD00AE6444 /* Place.swift */; };
+		504ED68B1DFDA93000AE6444 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED68A1DFDA93000AE6444 /* LoginViewController.swift */; };
+		504ED68D1DFDA96800AE6444 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED68C1DFDA96800AE6444 /* RegisterViewController.swift */; };
+		504ED68F1DFDA99100AE6444 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED68E1DFDA99100AE6444 /* MapViewController.swift */; };
+		504ED6911DFDA9C400AE6444 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504ED6901DFDA9C400AE6444 /* PaymentViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		504ED6501DFDA3A000AE6444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504ED6331DFDA39F00AE6444 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 504ED63A1DFDA39F00AE6444;
+			remoteInfo = Jitensha;
+		};
+		504ED65B1DFDA3A000AE6444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504ED6331DFDA39F00AE6444 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 504ED63A1DFDA39F00AE6444;
+			remoteInfo = Jitensha;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		504ED63B1DFDA39F00AE6444 /* Jitensha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jitensha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		504ED63E1DFDA39F00AE6444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		504ED6431DFDA39F00AE6444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		504ED6451DFDA39F00AE6444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		504ED6481DFDA39F00AE6444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		504ED64A1DFDA39F00AE6444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504ED64F1DFDA3A000AE6444 /* JitenshaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JitenshaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		504ED6531DFDA3A000AE6444 /* JitenshaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JitenshaTests.swift; sourceTree = "<group>"; };
+		504ED6551DFDA3A000AE6444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504ED65A1DFDA3A000AE6444 /* JitenshaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JitenshaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		504ED65E1DFDA3A000AE6444 /* JitenshaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JitenshaUITests.swift; sourceTree = "<group>"; };
+		504ED6601DFDA3A000AE6444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504ED6751DFDA69D00AE6444 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		504ED6781DFDA75200AE6444 /* ErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		504ED67B1DFDA7B200AE6444 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		504ED67D1DFDA7EE00AE6444 /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		504ED6801DFDA82E00AE6444 /* SessionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionRouter.swift; sourceTree = "<group>"; };
+		504ED6821DFDA85F00AE6444 /* PlaceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceRouter.swift; sourceTree = "<group>"; };
+		504ED6841DFDA89100AE6444 /* PaymentRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentRouter.swift; sourceTree = "<group>"; };
+		504ED6861DFDA8DD00AE6444 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		504ED6881DFDA8FD00AE6444 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		504ED68A1DFDA93000AE6444 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		504ED68C1DFDA96800AE6444 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		504ED68E1DFDA99100AE6444 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		504ED6901DFDA9C400AE6444 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		504ED6381DFDA39F00AE6444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504ED64C1DFDA3A000AE6444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504ED6571DFDA3A000AE6444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		504ED6321DFDA39F00AE6444 = {
+			isa = PBXGroup;
+			children = (
+				504ED63D1DFDA39F00AE6444 /* Jitensha */,
+				504ED6521DFDA3A000AE6444 /* JitenshaTests */,
+				504ED65D1DFDA3A000AE6444 /* JitenshaUITests */,
+				504ED63C1DFDA39F00AE6444 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		504ED63C1DFDA39F00AE6444 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				504ED63B1DFDA39F00AE6444 /* Jitensha.app */,
+				504ED64F1DFDA3A000AE6444 /* JitenshaTests.xctest */,
+				504ED65A1DFDA3A000AE6444 /* JitenshaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		504ED63D1DFDA39F00AE6444 /* Jitensha */ = {
+			isa = PBXGroup;
+			children = (
+				504ED63E1DFDA39F00AE6444 /* AppDelegate.swift */,
+				504ED6741DFDA61200AE6444 /* Extensions */,
+				504ED6731DFDA60900AE6444 /* Managers */,
+				504ED6721DFDA60000AE6444 /* Models */,
+				504ED6711DFDA5F400AE6444 /* Controllers */,
+				504ED6701DFDA5D000AE6444 /* Views&Support */,
+			);
+			path = Jitensha;
+			sourceTree = "<group>";
+		};
+		504ED6521DFDA3A000AE6444 /* JitenshaTests */ = {
+			isa = PBXGroup;
+			children = (
+				504ED6531DFDA3A000AE6444 /* JitenshaTests.swift */,
+				504ED6551DFDA3A000AE6444 /* Info.plist */,
+			);
+			path = JitenshaTests;
+			sourceTree = "<group>";
+		};
+		504ED65D1DFDA3A000AE6444 /* JitenshaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				504ED65E1DFDA3A000AE6444 /* JitenshaUITests.swift */,
+				504ED6601DFDA3A000AE6444 /* Info.plist */,
+			);
+			path = JitenshaUITests;
+			sourceTree = "<group>";
+		};
+		504ED6701DFDA5D000AE6444 /* Views&Support */ = {
+			isa = PBXGroup;
+			children = (
+				504ED6421DFDA39F00AE6444 /* Main.storyboard */,
+				504ED6451DFDA39F00AE6444 /* Assets.xcassets */,
+				504ED6471DFDA39F00AE6444 /* LaunchScreen.storyboard */,
+				504ED64A1DFDA39F00AE6444 /* Info.plist */,
+			);
+			name = "Views&Support";
+			sourceTree = "<group>";
+		};
+		504ED6711DFDA5F400AE6444 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				504ED68A1DFDA93000AE6444 /* LoginViewController.swift */,
+				504ED68C1DFDA96800AE6444 /* RegisterViewController.swift */,
+				504ED68E1DFDA99100AE6444 /* MapViewController.swift */,
+				504ED6901DFDA9C400AE6444 /* PaymentViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		504ED6721DFDA60000AE6444 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				504ED6861DFDA8DD00AE6444 /* Session.swift */,
+				504ED6881DFDA8FD00AE6444 /* Place.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		504ED6731DFDA60900AE6444 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				504ED6781DFDA75200AE6444 /* ErrorManager.swift */,
+				504ED67B1DFDA7B200AE6444 /* APIManager.swift */,
+				504ED67D1DFDA7EE00AE6444 /* BaseRouter.swift */,
+				504ED6801DFDA82E00AE6444 /* SessionRouter.swift */,
+				504ED6821DFDA85F00AE6444 /* PlaceRouter.swift */,
+				504ED6841DFDA89100AE6444 /* PaymentRouter.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		504ED6741DFDA61200AE6444 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				504ED6751DFDA69D00AE6444 /* Utils.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		504ED63A1DFDA39F00AE6444 /* Jitensha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504ED6631DFDA3A000AE6444 /* Build configuration list for PBXNativeTarget "Jitensha" */;
+			buildPhases = (
+				504ED6371DFDA39F00AE6444 /* Sources */,
+				504ED6381DFDA39F00AE6444 /* Frameworks */,
+				504ED6391DFDA39F00AE6444 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jitensha;
+			productName = Jitensha;
+			productReference = 504ED63B1DFDA39F00AE6444 /* Jitensha.app */;
+			productType = "com.apple.product-type.application";
+		};
+		504ED64E1DFDA3A000AE6444 /* JitenshaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504ED6661DFDA3A000AE6444 /* Build configuration list for PBXNativeTarget "JitenshaTests" */;
+			buildPhases = (
+				504ED64B1DFDA3A000AE6444 /* Sources */,
+				504ED64C1DFDA3A000AE6444 /* Frameworks */,
+				504ED64D1DFDA3A000AE6444 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				504ED6511DFDA3A000AE6444 /* PBXTargetDependency */,
+			);
+			name = JitenshaTests;
+			productName = JitenshaTests;
+			productReference = 504ED64F1DFDA3A000AE6444 /* JitenshaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		504ED6591DFDA3A000AE6444 /* JitenshaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504ED6691DFDA3A000AE6444 /* Build configuration list for PBXNativeTarget "JitenshaUITests" */;
+			buildPhases = (
+				504ED6561DFDA3A000AE6444 /* Sources */,
+				504ED6571DFDA3A000AE6444 /* Frameworks */,
+				504ED6581DFDA3A000AE6444 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				504ED65C1DFDA3A000AE6444 /* PBXTargetDependency */,
+			);
+			name = JitenshaUITests;
+			productName = JitenshaUITests;
+			productReference = 504ED65A1DFDA3A000AE6444 /* JitenshaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		504ED6331DFDA39F00AE6444 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Sergey Umarov";
+				TargetAttributes = {
+					504ED63A1DFDA39F00AE6444 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					504ED64E1DFDA3A000AE6444 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 504ED63A1DFDA39F00AE6444;
+					};
+					504ED6591DFDA3A000AE6444 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 504ED63A1DFDA39F00AE6444;
+					};
+				};
+			};
+			buildConfigurationList = 504ED6361DFDA39F00AE6444 /* Build configuration list for PBXProject "Jitensha" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 504ED6321DFDA39F00AE6444;
+			productRefGroup = 504ED63C1DFDA39F00AE6444 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				504ED63A1DFDA39F00AE6444 /* Jitensha */,
+				504ED64E1DFDA3A000AE6444 /* JitenshaTests */,
+				504ED6591DFDA3A000AE6444 /* JitenshaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		504ED6391DFDA39F00AE6444 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504ED6491DFDA39F00AE6444 /* LaunchScreen.storyboard in Resources */,
+				504ED6461DFDA39F00AE6444 /* Assets.xcassets in Resources */,
+				504ED6441DFDA39F00AE6444 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504ED64D1DFDA3A000AE6444 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504ED6581DFDA3A000AE6444 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		504ED6371DFDA39F00AE6444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504ED68B1DFDA93000AE6444 /* LoginViewController.swift in Sources */,
+				504ED6871DFDA8DD00AE6444 /* Session.swift in Sources */,
+				504ED6811DFDA82E00AE6444 /* SessionRouter.swift in Sources */,
+				504ED6831DFDA85F00AE6444 /* PlaceRouter.swift in Sources */,
+				504ED67E1DFDA7EE00AE6444 /* BaseRouter.swift in Sources */,
+				504ED63F1DFDA39F00AE6444 /* AppDelegate.swift in Sources */,
+				504ED6911DFDA9C400AE6444 /* PaymentViewController.swift in Sources */,
+				504ED67C1DFDA7B200AE6444 /* APIManager.swift in Sources */,
+				504ED6791DFDA75200AE6444 /* ErrorManager.swift in Sources */,
+				504ED6851DFDA89100AE6444 /* PaymentRouter.swift in Sources */,
+				504ED68D1DFDA96800AE6444 /* RegisterViewController.swift in Sources */,
+				504ED6891DFDA8FD00AE6444 /* Place.swift in Sources */,
+				504ED6761DFDA69D00AE6444 /* Utils.swift in Sources */,
+				504ED68F1DFDA99100AE6444 /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504ED64B1DFDA3A000AE6444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504ED67A1DFDA76500AE6444 /* ErrorManager.swift in Sources */,
+				504ED67F1DFDA7EE00AE6444 /* BaseRouter.swift in Sources */,
+				504ED6541DFDA3A000AE6444 /* JitenshaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504ED6561DFDA3A000AE6444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504ED65F1DFDA3A000AE6444 /* JitenshaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		504ED6511DFDA3A000AE6444 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 504ED63A1DFDA39F00AE6444 /* Jitensha */;
+			targetProxy = 504ED6501DFDA3A000AE6444 /* PBXContainerItemProxy */;
+		};
+		504ED65C1DFDA3A000AE6444 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 504ED63A1DFDA39F00AE6444 /* Jitensha */;
+			targetProxy = 504ED65B1DFDA3A000AE6444 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		504ED6421DFDA39F00AE6444 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				504ED6431DFDA39F00AE6444 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		504ED6471DFDA39F00AE6444 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				504ED6481DFDA39F00AE6444 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		504ED6611DFDA3A000AE6444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		504ED6621DFDA3A000AE6444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		504ED6641DFDA3A000AE6444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Jitensha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sergeyumarov.Jitensha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		504ED6651DFDA3A000AE6444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Jitensha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sergeyumarov.Jitensha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+		504ED6671DFDA3A000AE6444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JitenshaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sergeyumarov.JitenshaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jitensha.app/Jitensha";
+			};
+			name = Debug;
+		};
+		504ED6681DFDA3A000AE6444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JitenshaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sergeyumarov.JitenshaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jitensha.app/Jitensha";
+			};
+			name = Release;
+		};
+		504ED66A1DFDA3A000AE6444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = JitenshaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sergeyumarov.JitenshaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Jitensha;
+			};
+			name = Debug;
+		};
+		504ED66B1DFDA3A000AE6444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = JitenshaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sergeyumarov.JitenshaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Jitensha;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		504ED6361DFDA39F00AE6444 /* Build configuration list for PBXProject "Jitensha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504ED6611DFDA3A000AE6444 /* Debug */,
+				504ED6621DFDA3A000AE6444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504ED6631DFDA3A000AE6444 /* Build configuration list for PBXNativeTarget "Jitensha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504ED6641DFDA3A000AE6444 /* Debug */,
+				504ED6651DFDA3A000AE6444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		504ED6661DFDA3A000AE6444 /* Build configuration list for PBXNativeTarget "JitenshaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504ED6671DFDA3A000AE6444 /* Debug */,
+				504ED6681DFDA3A000AE6444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		504ED6691DFDA3A000AE6444 /* Build configuration list for PBXNativeTarget "JitenshaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504ED66A1DFDA3A000AE6444 /* Debug */,
+				504ED66B1DFDA3A000AE6444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 504ED6331DFDA39F00AE6444 /* Project object */;
+}
